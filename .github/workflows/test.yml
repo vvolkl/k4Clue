@@ -20,7 +20,7 @@ jobs:
         SETUP: ['/cvmfs/sw.hsf.org/key4hep/setup.sh', '/cvmfs/sw-nightlies.hsf.org/key4hep/setup.sh']
     steps:
     - uses: actions/checkout@v2
-    - uses: cvmfs-contrib/github-action-cvmfs@v2
+    - uses: vvolkl/github-action-cvmfs@centos7
     - run: |
          mkdir -p build install
          git submodule init
