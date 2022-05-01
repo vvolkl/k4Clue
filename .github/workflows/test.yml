@@ -21,6 +21,8 @@ jobs:
     steps:
     - uses: actions/checkout@v2
     - uses: vvolkl/github-action-cvmfs@centos7
+      with:
+        run_local_checkout: true
     - run: |
          mkdir -p build install
          git submodule init
